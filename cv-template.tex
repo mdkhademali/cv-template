@@ -1,0 +1,94 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{parskip} % Space between paragraphs
+\usepackage{geometry} % Page dimensions
+\usepackage{xcolor} % Custom colors
+\usepackage{titlesec} % Custom section titles
+\usepackage{hyperref} % Hyperlinks
+\usepackage{enumitem} % Custom lists
+\geometry{margin=1in}
+
+% Colors
+\definecolor{maincolor}{HTML}{2E3A87} % Custom main color
+\definecolor{graytext}{HTML}{585858} % Custom gray color
+
+% Fonts
+\renewcommand{\familydefault}{\sfdefault} % Use sans-serif font
+
+% Section formatting
+\titleformat{\section}{\color{maincolor}\Large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\color{maincolor}\normalsize\bfseries}{}{0em}{}
+
+% No page numbers
+\pagenumbering{gobble}
+
+\begin{document}
+
+% Name and Contact Information
+\begin{center}
+    {\Huge \textbf{Your Name}} \\[0.5em]
+    \href{mailto:your.email@example.com}{your.email@example.com} | 
+    \href{https://github.com/yourusername}{github.com/yourusername} | 
+    \href{https://www.linkedin.com/in/yourprofile/}{linkedin.com/in/yourprofile}
+\end{center}
+
+% Divider
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+% Professional Summary
+\section*{Professional Summary}
+\color{graytext}
+Dedicated software developer with experience in Python, machine learning, and web development. Experience in building scalable applications and working in cross-functional teams to deliver high impact solutions.
+
+% Skills
+\section*{Skills}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Programming Languages:} Python, JavaScript, C++
+    \item \textbf{Frameworks and Tools:} TensorFlow, Flask, React, Docker
+    \item \textbf{Other:} Git, Agile methodologies, Unit Testing
+\end{itemize}
+
+% Work Experience
+\section*{Work Experience}
+
+\subsection*{Software Engineer}
+\textit{Company Name, Location} \hfill Jan 2020 -- Present
+\begin{itemize}[leftmargin=*]
+    \item Developed and maintained back-end systems using Flask and PostgreSQL.
+    \item Implemented CI/CD pipelines, reducing deployment times by 30\%.
+    \item Collaborated with cross-functional teams to enhance user experience.
+\end{itemize}
+
+\subsection*{Intern - Web Development}
+\textit{Another Company, Location} \hfill Jun 2019 -- Dec 2019
+\begin{itemize}[leftmargin=*]
+    \item Built dynamic web applications using React and RESTful APIs.
+    \item Improved website performance, achieving a 25\% faster load time.
+    \item Contributed to open-source projects on GitHub.
+\end{itemize}
+
+% Education
+\section*{Education}
+\textbf{Bachelor of Science in Computer Science} \hfill Sep 2015--May 2019 \\
+University Name, Location \\
+GPA: 3.8/4.0
+
+% Projects
+\section*{Projects}
+
+\subsection*{GitHub Contributions Analyzer}
+\href{https://github.com/yourusername/project1}{GitHub Link} \\
+A Python-based tool that visualizes user contributions in GitHub repositories.
+
+\subsection*{E-commerce Website}
+\href{https://github.com/yourusername/project2}{GitHub Link} \\
+Developed a full-stack e-Commerce application with React, Node.js, and MongoDB.
+
+% Footer
+\vfill
+\begin{center}
+    {\small \textit{Last updated on \today}}
+\end{center}
+
+\end{document}
